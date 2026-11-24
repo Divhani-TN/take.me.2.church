@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>churches</title>
+    <link rel="stylesheet" href="/css/churches.css">
+    <link rel="stylesheet" href="/css/main.css">
+      <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://tile. openstreetmap.org">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header id="navbar"></header>
+    <header class="site-header" data-header>
+
+       <symbol id="icon-church" viewBox="0 0 48 48">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 3v8M20.5 6.5h7"/>
+        <path d="M14 20 24 11l10 9v20H14z"/>
+        <path d="M14 26H4v14h10M34 26h10v14H34"/>
+        <path d="M20 40V31a4 4 0 0 1 8 0v9"/>
+        <path d="M2 40h44"/>
+      </g>
+    </symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/>
+      </g>
+    </symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <path d="M4 7h16M4 12h16M4 17h16"/>
+      </g>
+    </symbol>
+  </svg>
+
+  
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" data-hero>
+      <h1 class="hero-title">Find a church Near You</h1>
+      <p class="hero-sub">Discover churches, services, ministries and communities<br>near you.</p>
+
+      <form class="search" role="search" action="churches.html" method="get">
+        <button class="search-icon-btn" type="button" aria-label="Filters">
+          <svg width="20" height="20"><use href="#icon-menu"/></svg>
+        </button>
+        <label class="sr-only" for="location">Location</label>
+        <input id="location" name="q" type="text" placeholder="Enter Your Location e.g Johannesburg" autocomplete="off">
+        <button class="search-icon-btn" type="submit" aria-label="Search">
+          <svg width="20" height="20"><use href="#icon-search"/></svg>
+        </button>
+      </form>
+    </section>
+
+    <!-- FEATURED CHURCHES -->
+    <section class="section featured" aria-labelledby="featured-title">
+      <div class="section-head" data-reveal>
+        <h2 id="featured-title" class="sr-only">Featured churches</h2>
+        <a class="view-all" href="discover.html">view all</a>
+      </div>
+       <section class="section">
+       <div id="results" class="card-grid" aria-live="polite"></div>
+       </section>
+
+      <div class="card-grid">
+        <a class="card" href="#" data-stagger>
+          <div class="card-media"></div>
+          <p class="card-time">Sunday 10:00AM</p>
+        </a>
+        <a class="card" href="#" data-stagger>
+          <div class="card-media"></div>
+          <p class="card-time">Sunday 10:00AM</p>
+        </a>
+        <a class="card" href="#" data-stagger>
+          <div class="card-media"></div>
+          <p class="card-time">Sunday 10:00AM</p>
+        </a>
+        <a class="card" href="#" data-stagger>
+          <div class="card-media"></div>
+          <p class="card-time">Sunday 10:00AM</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- DENOMINATIONS -->
+    <section class="section denominations" aria-labelledby="denom-title">
+      <div class="section-head section-head--center" data-reveal>
+        <h2 id="denom-title">Denominations</h2>
+        <a class="view-all" href="/html/discover.html">view all</a>
+      </div>
+
+      <ul class="denom-grid">
+        <li data-denom><a href="churches.html?d=baptist"><span class="denom-icon"><svg><use href="#icon-church"/></svg></span><span class="denom-label">Baptist</span></a></li>
+        <li data-denom><a href="churches.html?d=methodist"><span class="denom-icon"><svg><use href="#icon-church"/></svg></span><span class="denom-label">Methodist</span></a></li>
+        <li data-denom><a href="churches.html?d=anglican"><span class="denom-icon"><svg><use href="#icon-church"/></svg></span><span class="denom-label">Anglican</span></a></li>
+        <li data-denom><a href="churches.html?d=reformed"><span class="denom-icon"><svg><use href="#icon-church"/></svg></span><span class="denom-label">Reformed</span></a></li>
+        <li data-denom><a href="churches.html?d=presbyterian"><span class="denom-icon"><svg><use href="#icon-church"/></svg></span><span class="denom-label">Presbyterian</span></a></li>
+        <li data-denom><a href="churches.html?d=pentecostal"><span class="denom-icon"><svg><use href="#icon-church"/></svg></span><span class="denom-label">Pentecostal</span></a></li>
+        <li data-denom><a href="churches.html?d=catholic"><span class="denom-icon"><svg><use href="#icon-church"/></svg></span><span class="denom-label">Catholic</span></a></li>
+        <li data-denom><a href="churches.html?d=other"><span class="denom-icon"><svg><use href="#icon-church"/></svg></span><span class="denom-label">Other</span></a></li>
+      </ul>
+    </section>
+
+    <!-- TAGLINE BAND -->
+    <section class="tagline" data-tagline>
+      <p><span data-tag-word>find community</span> <span data-tag-word>find church nearby now before you go</span></p>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="animations.js"></script>
+    <script src="nav.js"></script>
+    <script src="main.js"></script>
+   
+    
+</body>
+</html>
+
+

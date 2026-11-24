@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/events.css">
+    <link href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet">
+</head>
+
+<main class="main-content">
+ <body class="loaded">
+  <header id="navbar"></header>
+   <script src="/js/nav.js"></script>
+   <script src="/js/main.js"></script>
+
+<body>
+    
+        <div class="page-title">
+            <h1>Upcoming Events</h1>
+            <p>find events near you</p>
+        </div>
+
+        <div class="search-container">
+            <div class="search-input-wrapper">
+                <input type="text" id="locationSearch" placeholder="Enter Your Location e.g Johannesburg">
+            </div>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn">Location ▾</button>
+            <button class="filter-btn">Date ▾</button>
+            <button class="filter-btn">Type ▾</button>
+        </div>
+
+        <!-- Container where JS will inject cards -->
+        <div class="events-list" id="eventsList">
+            <section class="section">
+              <div id="results" class="card-grid" aria-live="polite"></div>
+            </section>
+            <!-- Loading state -->
+            <p id="loadingText" style="text-align:center; color:#888;">Loading events...</p>
+
+            <div class="events-cards">
+            <!-- Event cards will be dynamically injected here by JS -->
+              <!-- Left: Image Placeholder -->
+      <div class="event-image"></div>
+
+      <!-- Right: Event Details -->
+      <div class="event-details">
+        <div class="event-info">
+          <h3 class="event-title">Evening Worship Night</h3>
+          <p class="church-name">Grace Community Church</p>
+          <p class="event-time">Sunday, March 16 · 6:00 PM – 8:30 PM</p>
+        </div>
+             <button class="btn-view-event">View Event</button>
+             
+
+        </div>
+           
+        <div class = "footer">
+            <p>2026 Take ME 2 CHURCH. All rights reserved.</p>
+        </div>
+    
+</body>
+</html>

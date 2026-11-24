@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- <header id="navbar"></header> -->
+  <!-- <script src="/.js/nav.js"></script> -->
+
+  <div class="main-container">
+        
+        <!-- HEADER -->
+        <header>
+          <header id="navbar"></header>
+            <script src="nav.js"></script>
+            <h1>List Your Church</h1>
+            <p>Help more people find your church. Complete the form below to get started.</p>
+        </header>
+
+        <!-- THE CIRCULAR NAVIGATION -->
+        <div class="circle-container">
+            <div class="circle-path"></div> <!-- Visual dashed line (optional) -->
+            
+            <div class="steps-wrapper">
+                <!-- Step 1 -->
+                <div class="step-item active" data-step="1" style="--i:0;">
+                    <div class="circle">1</div>
+                    <span class="label">Basic Info</span>
+                </div>
+                <!-- Step 2 -->
+                <div class="step-item" data-step="2" style="--i:1;">
+                    <div class="circle">2</div>
+                    <span class="label">Denomination</span>
+                </div>
+                <!-- Step 3 -->
+                <div class="step-item" data-step="3" style="--i:2;">
+                    <div class="circle">3</div>
+                    <span class="label">Description</span>
+                </div>
+                <!-- Step 4 -->
+                <div class="step-item" data-step="4" style="--i:3;">
+                    <div class="circle">4</div>
+                    <span class="label">Location</span>
+                </div>
+                <!-- Step 5 -->
+                <div class="step-item" data-step="5" style="--i:4;">
+                    <div class="circle">5</div>
+                    <span class="label">Services</span>
+                </div>
+                <!-- Step 6 -->
+                <div class="step-item" data-step="6" style="--i:5;">
+                    <div class="circle">6</div>
+                    <span class="label">Ministries</span>
+                </div>
+                <!-- Step 7 -->
+                <div class="step-item" data-step="7" style="--i:6;">
+                    <div class="circle">7</div>
+                    <span class="label">Submit Contact Info</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- THE FORM CONTENT -->
+        <div class="form-content">
+            <!-- We will toggle visibility of these forms -->
+            <div class="form-step active" id="form-1">
+                <h3>1. Basic Information</h3>
+                <input type="text" placeholder="Church Name">
+            </div>
+            <div class="form-step" id="form-2">
+                <h3>2. Denomination</h3>
+                <input type="text" placeholder="e.g. Baptist, Catholic">
+            </div>
+            <div class="form-step" id="form-3">
+                <h3>3. Short Description</h3>
+                <textarea placeholder="Tell us about your church..."></textarea>
+            </div>
+            <div class="form-step" id="form-4">
+                <h3>4. Location</h3>
+                <input type="text" placeholder="Address">
+            </div>
+            <div class="form-step" id="form-5">
+                <h3>5. Service Times</h3>
+                <input type="text" placeholder="e.g. Sundays at 10 AM">
+            </div>
+            <div class="form-step" id="form-6">
+                <h3>6. Ministries</h3>
+                <input type="text" placeholder="e.g. Youth, Children's Ministry">
+            </div>
+            <div class="form-step" id="form-7">
+                <h3>7. Contact Information</h3>
+                <input type="text" placeholder="Email or Phone">
+            <!-- Add other steps as needed... -->
+        </div>
+
+        <!-- CONTROLS -->
+        <div class="controls">
+            <button id="prevBtn" type="button" disabled>Back</button>
+            <button id="nextBtn" type="button">Next ></button>
+        </div>
+
+    </div>
+    <script src="about.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+
+
+</body>
+</html>

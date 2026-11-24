@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="discover.css">
+        <link href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="navbar"></header>
+    <script src="nav.js"></script>
+    <main class="container">
+
+        <!-- Search -->
+        <div class="search-wrapper">
+            <div class="search-box">
+                <input type="text" placeholder="Enter Your Location e.g Johannesburg">
+                <!-- SVG Search Icon -->
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="filter-section">
+            <div class="filter-grid">
+                <button class="filter-btn">Distance</button>
+                <button class="filter-btn">Denomination</button>
+                <button class="filter-btn">Service Times</button>
+                <button class="filter-btn">Other filters</button>
+                <button class="toggle-view" id="viewToggleBtn">LIST | MAP</button>
+            </div>
+            
+        </div>
+
+        <!-- Card List -->
+        <div class="card-list">
+
+            <!-- Card 1 -->
+            <article class="church-card">
+                <div class="card-image"></div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2 class="church-title">Grace Community church</h2>
+                        <a href="#" class="view-link">View Church ></a>
+                    </div>
+
+                    <div class="info-row">
+                        <!-- SVG Pin Icon -->
+                        <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                        <span>2.1 km away Sandton, Johannesburg</span>
+                    </div>
+                    <div class="sub-text">Pentecostal</div>
+
+                    <div class="info-row">
+                        <!-- SVG Clock Icon -->
+                        <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                        </svg>
+                        <span>Sun 09:00 AM & 11:00 AM</span>
+                        <span class="time-separator">|</span>
+                        <span>Wednesday 18:00 PM</span>
+                    </div>
+
+                    <div class="tags">
+                        <span class="tag">YOUTH</span>
+                        <span class="tag">Children</span>
+                        <span class="tag">Men's</span>
+                        <span class="tag">Women's</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="church-card">
+                <div class="card-image"></div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <h2 class="church-title">Hillsong Braamfontein</h2>
+                        <a href="#" class="view-link">View Church ></a>
+                    </div>
+
+                    <div class="info-row">
+                        <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                        <span>300m away Braamfontein, Johannesburg</span>
+                    </div>
+                    <div class="sub-text">Non-Denominational</div>
+
+                    <div class="info-row">
+                        <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                        </svg>
+                        <span>Sun 10:00 AM & 17:00 PM</span>
+                        <span class="time-separator">|</span>
+                        <span>Wednesday 18:00 PM</span>
+                    </div>
+
+                    <div class="tags">
+                        <span class="tag">YOUTH</span>
+                        <span class="tag">Children</span>
+                        <span class="tag">Men's</span>
+                        <span class="tag">Women's</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    
+    </main>
+
+    <script src="discover.js"></script>
+    <script src="toggle.js"></script>
+</body>
+</html>
